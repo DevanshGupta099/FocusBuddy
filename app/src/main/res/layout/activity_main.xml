@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textViewFocusTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Focus Time (minutes):"
+            android:textColor="#ECF0F1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:textSize="18sp"
+            android:contentDescription="Focus Time TextView"/>
+
+        <EditText
+            android:id="@+id/editTextFocusTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Minutes"
+            android:inputType="number"
+            android:layout_below="@id/textViewFocusTime"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textColor="#ECF0F1"
+            android:textColorHint="#95A5A6"
+            android:background="@android:color/transparent"
+            android:textSize="16sp"
+            android:contentDescription="Focus Time EditText"/>
+
+        <TextView
+            android:id="@+id/textViewFocusTimeSeconds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Focus Time (seconds):"
+            android:textColor="#ECF0F1"
+            android:layout_below="@id/editTextFocusTime"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:contentDescription="Focus Time Seconds TextView"/>
+
+        <EditText
+            android:id="@+id/editTextFocusTimeSeconds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Seconds"
+            android:inputType="number"
+            android:layout_below="@id/textViewFocusTimeSeconds"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textColor="#ECF0F1"
+            android:textColorHint="#95A5A6"
+            android:background="@android:color/transparent"
+            android:textSize="16sp"
+            android:contentDescription="Focus Time Seconds EditText"/>
+
+        <TextView
+            android:id="@+id/textViewBreakInterval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Break Interval (minutes):"
+            android:textColor="#ECF0F1"
+            android:layout_below="@id/editTextFocusTimeSeconds"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:contentDescription="Break Interval TextView"/>
+
+        <EditText
+            android:id="@+id/editTextBreakInterval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Minutes"
+            android:inputType="number"
+            android:layout_below="@id/textViewBreakInterval"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textColor="#ECF0F1"
+            android:textColorHint="#95A5A6"
+            android:background="@android:color/transparent"
+            android:textSize="16sp"
+            android:contentDescription="Break Interval EditText"/>
+
+        <TextView
+            android:id="@+id/textViewBreakDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Break Duration (minutes):"
+            android:textColor="#ECF0F1"
+            android:layout_below="@id/editTextBreakInterval"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:contentDescription="Break Duration TextView"/>
+
+        <EditText
+            android:id="@+id/editTextBreakDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Minutes"
+            android:inputType="number"
+            android:layout_below="@id/textViewBreakDuration"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textColor="#ECF0F1"
+            android:textColorHint="#95A5A6"
+            android:background="@android:color/transparent"
+            android:textSize="16sp"
+            android:contentDescription="Break Duration EditText"/>
+
+        <Button
+            android:id="@+id/buttonStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Focus Session"
+            android:layout_below="@id/editTextBreakDuration"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textColor="#ECF0F1"
+            android:background="@drawable/button_background"
+            android:textSize="16sp"
+            android:contentDescription="Start Focus Session Button"/>
+
+        <Button
+            android:id="@+id/buttonStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop Focus Session"
+            android:layout_below="@id/buttonStart"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textColor="#ECF0F1"
+            android:background="@drawable/button_background"
+            android:textSize="16sp"
+            android:contentDescription="Stop Focus Session Button"/>
+
+        <Spinner
+            android:id="@+id/spinnerBreakActivities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonStop"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/white"
+            android:background="#34495E"
+            android:contentDescription="Break Activities Spinner"/>
+
+        <TextView
+            android:id="@+id/textViewPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Points: 0"
+            android:textColor="#ECF0F1"
+            android:layout_below="@id/spinnerBreakActivities"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:contentDescription="Points TextView"/>
+
+        <TextView
+            android:id="@+id/textViewBadges"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Badges: None"
+            android:textColor="#ECF0F1"
+            android:layout_below="@id/textViewPoints"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:contentDescription="Badges TextView"/>
+
+        <TextView
+            android:id="@+id/textViewTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Timer: 0"
+            android:textColor="#ECF0F1"
+            android:layout_below="@id/textViewBadges"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:contentDescription="Timer TextView"/>
+
+
+        <Button
+            android:id="@+id/buttonSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="13dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:text="Settings" />
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textViewFocusTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Focus Time (minutes) (optional):"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/editTextFocusTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Minutes"
+            android:inputType="number"
+            android:layout_below="@id/textViewFocusTime"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/textViewFocusTimeSeconds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Focus Time (seconds):"
+            android:layout_below="@id/editTextFocusTime"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/editTextFocusTimeSeconds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Seconds"
+            android:inputType="number"
+            android:layout_below="@id/textViewFocusTimeSeconds"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/textViewBreakInterval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Break Interval (minutes):"
+            android:layout_below="@id/editTextFocusTimeSeconds"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/editTextBreakInterval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Minutes"
+            android:inputType="number"
+            android:layout_below="@id/textViewBreakInterval"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/textViewBreakDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Break Duration (minutes):"
+            android:layout_below="@id/editTextBreakInterval"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/editTextBreakDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Minutes"
+            android:inputType="number"
+            android:layout_below="@id/textViewBreakDuration"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/buttonStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Focus Session"
+            android:layout_below="@id/editTextBreakDuration"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"/>
+
+        <Spinner
+            android:id="@+id/spinnerBreakActivities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonStart"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+
+    </RelativeLayout>
+
+</ScrollView>
